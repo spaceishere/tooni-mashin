@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cal2.css" />
+  </head>
+  <body>
+    <div class="border">
+      <div id="result">
+        <div id="xxo" style="overflow: hidden"></div>
+      </div>
+      <div id="numbers">
+        <div class="row-1">
+          <div onclick="clearr()" class="light">AC</div>
+          <div class="light" onclick="solih()">+/-</div>
+          <div class="light" onclick="huwilah()">%</div>
+          <div class="orangee" onclick="process(`/`)">÷</div>
+        </div>
+        <div class="row-2">
+          <div onclick="result(7)" class="dark" class="dark7">7</div>
+          <div onclick="result(8)" class="dark" class="dark8">8</div>
+          <div onclick="result(9)" class="dark" class="dark9">9</div>
+          <div onclick="process(`*`)" class="orangee">x</div>
+        </div>
+        <div class="row-3">
+          <div onclick="result(4)" class="dark" class="dark4">4</div>
+          <div onclick="result(5)" class="dark" class="dark5">5</div>
+          <div onclick="result(6)" class="dark" class="dark6">6</div>
+          <div onclick="process(`-`)" class="orangee">-</div>
+        </div>
+        <div class="row-4">
+          <div onclick="result(1)" class="dark" class="dark1">1</div>
+          <div onclick="result(2)" class="dark" class="dark2">2</div>
+          <div onclick="result(3)" class="dark" class="dark3">3</div>
+          <div onclick="process(`+`)" class="orangee">+</div>
+        </div>
+      </div>
+      <div class="row-5">
+        <div id="zero" onclick="result(0)">0</div>
+        <div class="dark" onclick="tseg()">.</div>
+        <div class="orangee" onclick="resulttentsu()">=</div>
+      </div>
+    </div>
+  </body>
+  <script src="./cal2.js"></script>
+</html>
